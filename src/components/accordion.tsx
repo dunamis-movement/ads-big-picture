@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { AccordionItem } from "../App";
+import { AccordionItem } from "@bigpicture/App";
 import "../App.css";
 
 interface AccordionProps {

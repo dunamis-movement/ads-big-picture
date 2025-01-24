@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import Header from "./components/header";
 import BigPictureCards from "./components/big-picture-overview";
 import Accordion from "./components/accordion";
