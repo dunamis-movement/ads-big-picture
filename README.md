@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://your-logo-link-here" alt="Big Picture Logo" width="200">
+  <img src="./assets/header.png" alt="Big Picture Logo" width="200">
 </p>
 
 <h1 align="center">Big Picture - Construindo Direcionamentos Espirituais</h1>
