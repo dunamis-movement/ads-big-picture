@@ -1,0 +1,282 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.main {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.accordionSection {
+  margin-top: 20px;
+}
+
+.accordionItem {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.accordionHeader {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.accordionContent {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.icon {
+  font-size: 1.2rem;
+}
+
+.container {
+  overflow-x: hidden;
+  font-family: inherit;
+}
+.container > *:not(:first-child) {
+  margin: 80px;
+}
+
+.header {
+  position: relative;
+  height: auto;
+  width: 100vw;
+  background: url("./assets/bg-header.png") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+
+.logo img {
+  padding: 60px 0px;
+  width: 80%;
+  height: auto;
+}
+
+.big-picture-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.big-picture-cards-container {
+  width: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.big-picture-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0;
+  background-color: #420faa;
+  padding: 64px 0px;
+  border-radius: 40px;
+}
+
+.big-picture-card {
+  flex: 1;
+  position: relative;
+  border-right: 0.5px solid #ffffff;
+  background-color: #420faa;
+  color: #ffffff;
+  text-align: start;
+  width: 100%;
+  padding: 0px 64px;
+}
+
+.big-picture-card h3 {
+  font-size: 1.5rem; /* Tamanho da fonte do título */
+  text-transform: uppercase; /* Deixa o texto em maiúsculas */
+  color: #ff9f84;
+  display: block;
+  /* white-space: nowrap;   */
+  overflow: visible;
+  text-overflow: clip; /* Mostra o texto completo, sem cortar */
+}
+
+.big-picture-card p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.big-picture-card:last-child {
+  border-right: none;
+}
+
+.accordion-container {
+  margin: 20px auto;
+  max-width: 1200px;
+  text-align: start;
+}
+
+.big-picture-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-radius: 8px;
+}
+
+.big-picture-title h1 {
+  display: inline-block;
+  border-radius: 8px;
+  background-color: #420faa;
+  color: #fff;
+  padding: 2px 8px;
+}
+
+.orange-title h1 {
+  background-color: #e75f3a; /* Laranja */
+  color: black;
+}
+
+.big-picture-title p {
+  text-align: start;
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 35%;
+  color: black;
+}
+.accordion {
+  margin-top: 20px;
+}
+
+.accordion-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.accordion-header {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-header h3 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.accordion-header .icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #420faa;
+}
+
+.accordion-content {
+  padding: 16px;
+  font-size: 1rem;
+  color: #555;
+  background-color: #ffffff;
+}
+
+.accordion-item.active .accordion-header {
+  background-color: #420faa;
+  color: #ffffff;
+}
+
+.accordion-item.active .accordion-header .icon {
+  color: #ffffff;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .big-picture-title {
+    flex-direction: column;
+    text-align: center;
+    gap: 4px;
+  }
+
+  .big-picture-title p {
+    max-width: 60%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .container > *:not(:first-child) {
+    margin: 0px;
+  }
+  .logo img {
+    max-width: 100%;
+  }
+
+  .big-picture-title {
+    flex-direction: column;
+    text-align: center;
+    gap: 4px;
+  }
+
+  .big-picture-title h1 {
+    background: none;
+  }
+
+  .big-picture-title h1 span {
+    background-color: #420faa;
+    color: #ffffff;
+    padding: 8px 16px;
+  }
+
+  .big-picture-title p {
+    font-size: 1.125rem;
+    padding: 0px 0px;
+    max-width: 80%;
+    text-align: center;
+  }
+
+  .big-picture-section {
+    gap: 40px;
+  }
+
+  .big-picture-cards-container {
+    align-items: start;
+  }
+
+  .big-picture-cards {
+    gap: 32px;
+    background-color: #fff;
+    border-radius: 0px;
+    justify-content: start;
+  }
+
+  .big-picture-card {
+    flex: 1;
+    border-radius: 45px;
+    padding: 40px 50px;
+  }
+
+  .big-picture-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .big-picture-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
