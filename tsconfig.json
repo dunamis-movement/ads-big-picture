@@ -9,11 +9,9 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "baseUrl": ".",
+    "baseUrl": "./src",
     "paths": {
-      "@bigpicture/*": ["src/*"],
-      "@bigpicture/components/*": ["src/components/*"],
-      "@bigpicture/styles/*": ["src/styles/*"]
+      "@bigpicture/*": ["*"]
     },
     "outDir": "./dist",
     "noEmit": true
