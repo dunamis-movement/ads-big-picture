@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/header.png" alt="Big Picture Logo" width="200">
+  <img src="https://github.com/tasaboia/big-picture/blob/main/src/assets/header.png" alt="Big Picture Logo" width="200">
 </p>
 
 <h1 align="center">Big Picture - Construindo Direcionamentos Espirituais</h1>
