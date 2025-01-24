@@ -1,50 +1,78 @@
-# React + TypeScript + Vite
+````markdown
+# Big Picture - Construindo Direcionamentos Espirituais
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto desenvolvido em **React**, que oferece uma interface interativa e moderna para explorar conceitos espirituais.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📜 Funcionalidades
 
-## Expanding the ESLint configuration
+- **Cards Interativos:** Exibem informações sobre os conceitos centrais como "Big Picture de Deus", "Big Picture de Jesus" e "Big Picture do Espírito Santo".
+- **Accordion Dinâmico:** Permite expandir e colapsar seções para detalhar tópicos como versículos, direções sobrenaturais, esferas da sociedade, paixões e mais.
+- **Design Responsivo:** Adaptado para desktop, tablet e dispositivos móveis.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## 🛠️ Tecnologias Utilizadas
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **React.js:** Biblioteca principal para criação de interfaces.
+- **TypeScript:** Garantia de tipagem estática e escalabilidade.
+- **CSS Modules:** Organização e encapsulamento de estilos.
+- **Git/GitHub:** Controle de versão e armazenamento remoto.
+
+---
+
+## 🚀 Instalação e Configuração
+
+Siga os passos abaixo para rodar o projeto localmente:
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/tasaboia/big-picture.git
+   ```
+````
+
+2. Entre na pasta do projeto:
+
+   ```bash
+   cd big-picture
+   ```
+
+3. Instale as dependências:
+
+   ```bash
+   npm install
+   ```
+
+4. Inicie o servidor de desenvolvimento:
+
+   ```bash
+   npm start
+   ```
+
+5. Acesse no navegador:
+   ```
+   http://localhost:3000
+   ```
+
+---
+
+## 📂 Estrutura de Pastas
+
+```plaintext
+src/
+├── components/
+│   ├── Accordion.tsx      # Componente de accordions
+│   ├── BigPictureCards.tsx # Cards explicativos
+├── App.tsx                # Componente principal
+├── index.tsx              # Ponto de entrada
+├── app.css                # Estilos globais
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 📜 Licença
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Este projeto está licenciado sob a **MIT License**. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
