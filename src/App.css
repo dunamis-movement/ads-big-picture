@@ -103,7 +103,7 @@
   .big-picture-title p {
     font-size: 1.125rem;
     padding: 0px 0px;
-    max-width: 80%;
+    max-width: 100%;
     text-align: center;
   }
 }
