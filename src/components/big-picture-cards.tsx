@@ -1,12 +1,12 @@
-import "../App.css";
+import "./big-picture-cards.css";
 
 function BigPictureCards() {
   return (
-    <section className="big-picture-section">
-      <div className="big-picture-title">
+    <section>
+      <div className="big-picture-title blue-title">
         <h1>
-          <span>CONSTRUINDO MINHA</span>
-          <span>BIG PICTURE</span>
+          <span>Entendendo a</span>
+          <span> Big Picture</span>
         </h1>
         <p>
           Através de direcionamentos espirituais no âmbito natural, tenho um

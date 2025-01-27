@@ -1,6 +1,6 @@
 import React from "react";
 import headerLogo from "../assets/header.png";
-import "../App.css";
+import "./header.css";
 
 const Header: React.FC = () => (
   <header>

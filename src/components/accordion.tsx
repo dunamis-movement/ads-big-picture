@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { AccordionItem } from "@bigpicture/App";
-import "../App.css";
+import "./accordion.css";
 
 interface AccordionProps {
   data: AccordionItem[];
@@ -17,8 +17,8 @@ const Accordion: React.FC<AccordionProps> = ({ data }) => {
     <div className="accordion-container">
       <div className="big-picture-title orange-title">
         <h1>
-          <span>CONSTRUINDO MINHA</span>
-          <span>BIG PICTURE</span>
+          <span>Construindo minha</span>
+          <span> Big Picture</span>
         </h1>
         <p>
           Através de direcionamentos espirituais no âmbito natural, tenho um
@@ -37,7 +37,10 @@ const Accordion: React.FC<AccordionProps> = ({ data }) => {
               className="accordion-header"
               onClick={() => handleAccordionClick(index)}
             >
-              <h3>{item.title}</h3>
+              <div className="accordion-title">
+                <h1>{item.id}</h1>
+                <h3>{item.title}</h3>
+              </div>
               <span className="icon">
                 {activeAccordion === index ? "-" : "+"}
               </span>
