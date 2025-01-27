@@ -14,35 +14,34 @@
   flex-direction: row;
   justify-content: center;
   gap: 0;
-  background-color: #420faa;
-  padding: 40px 0px;
-  border-radius: 40px;
-  letter-spacing: -1spx; /* Reduz em 0.5px */
+  background-color: var(--color-primary);
+  padding: var(--padding-medium) 0;
+  border-radius: var(--radius-medium);
+  /* letter-spacing: -0.5px; */
 }
 
 .big-picture-card {
   flex: 1;
   position: relative;
-  border-right: 0.5px solid #ffffff;
-  background-color: #420faa;
-  color: #ffffff;
+  border-right: 0.5px solid var(--color-text-primary);
+  background-color: var(--color-primary);
+  color: var(--color-text-primary);
   text-align: start;
   width: 100%;
-  padding: 0px 64px;
+  padding: 0 var(--gap-large);
 }
 
 .big-picture-card h3 {
-  font-size: 1.5rem; /* Tamanho da fonte do título */
-  text-transform: uppercase; /* Deixa o texto em maiúsculas */
-  color: #ff9f84;
+  font-size: var(--font-size-large);
+  text-transform: uppercase;
+  color: var(--color-accent);
   display: block;
-  /* white-space: nowrap;   */
   overflow: visible;
-  text-overflow: clip; /* Mostra o texto completo, sem cortar */
+  text-overflow: clip;
 }
 
 .big-picture-card p {
-  font-size: 1.25rem;
+  font-size: var(--font-size-medium);
   line-height: 1.5;
 }
 
@@ -52,7 +51,7 @@
 
 @media (min-width: 820px) and (max-width: 1024px) {
   .big-picture-card {
-    padding: 0px 40px;
+    padding: 0 var(--padding-small);
   }
 }
 
@@ -62,28 +61,28 @@
   }
 
   .big-picture-cards {
-    gap: 32px;
-    background-color: #fff;
-    border-radius: 0px;
-    padding: 20px 0px;
+    gap: var(--gap-small);
+    background-color: var(--color-text-primary);
+    border-radius: 0;
+    padding: var(--padding-small) 0;
     justify-content: start;
   }
 
   .big-picture-card {
     flex: 1;
-    border-radius: 45px;
-    padding: 40px 50px;
+    border-radius: var(--radius-large);
+    padding: var(--padding-medium) var(--padding-medium);
   }
 
   .big-picture-card h3 {
-    font-size: 1.5rem;
+    font-size: var(--font-size-large);
     margin-bottom: 10px;
     text-transform: uppercase;
     white-space: nowrap;
   }
 
   .big-picture-card p {
-    font-size: 1rem;
+    font-size: var(--font-size-small);
     line-height: 1.5;
   }
 }

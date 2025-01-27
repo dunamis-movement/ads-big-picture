@@ -20,13 +20,13 @@
 .big-picture-title h1 {
   display: inline-block;
   border-radius: 8px;
-  background-color: #420faa;
+  background-color: var(--color-primary);
   color: #fff;
   padding: 2px 8px;
 }
 
 .orange-title h1 {
-  background-color: #e75f3a;
+  background-color: var(--color-secondary);
   color: black;
 }
 
@@ -86,11 +86,11 @@
   }
 
   .blue-title span {
-    background-color: #420faa;
+    background-color: var(--color-primary);
   }
 
   .orange-title span {
-    background-color: #e75f3a;
+    background-color: var(--color-secondary);
     color: black;
   }
 
