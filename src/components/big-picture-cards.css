@@ -17,7 +17,7 @@
   background-color: var(--color-primary);
   padding: var(--padding-medium) 0;
   border-radius: var(--radius-medium);
-  /* letter-spacing: -0.5px; */
+  letter-spacing: -0.5px;
 }
 
 .big-picture-card {

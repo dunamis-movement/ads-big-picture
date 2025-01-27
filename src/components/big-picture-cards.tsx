@@ -1,6 +1,11 @@
+import { Item } from "@bigpicture/helpers/constants";
 import "./big-picture-cards.css";
 
-function BigPictureCards() {
+interface BigPictureCardsProps {
+  data: Item[];
+}
+
+const BigPictureCards: React.FC<BigPictureCardsProps> = ({ data }) => {
   return (
     <section>
       <div className="big-picture-title blue-title">
@@ -15,34 +20,16 @@ function BigPictureCards() {
       </div>
       <div className="big-picture-cards-container">
         <div className="big-picture-cards">
-          <div className="big-picture-card">
-            <h3>BIG PICTURE DE DEUS</h3>
-            <p>
-              Deus formou o universo pela sua palavra, do plano invisível se
-              tornando visível, por meio de um relacionamento íntimo com o autor
-              do plano.
-            </p>
-          </div>
-          <div className="big-picture-card">
-            <h3>BIG PICTURE DE JESUS</h3>
-            <p>
-              O ministério de Jesus foi muito mais do que salvação pessoal. Foi
-              sobre reinauguração do Reino de Deus na terra. Ele nos chamou para
-              sermos embaixadores dEle nas 7 esferas.
-            </p>
-          </div>
-          <div className="big-picture-card">
-            <h3>BIG PICTURE DO E.S.</h3>
-            <p>
-              O Espírito Santo nos capacita para desenvolver o plano de Deus pai
-              e Deus filho aqui na terra. Jesus nos convidou para fazer obras
-              maiores através do Espírito Santo.
-            </p>
-          </div>
+          {data.map((card, index) => (
+            <div className="big-picture-card" key={index}>
+              <h3>{card.title}</h3>
+              <p>{card.content}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
   );
-}
+};
 
 export default BigPictureCards;

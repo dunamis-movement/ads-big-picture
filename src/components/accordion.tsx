@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { AccordionItem } from "@bigpicture/App";
 import "./accordion.css";
+import { Item } from "@bigpicture/helpers/constants";
 
 interface AccordionProps {
-  data: AccordionItem[];
+  data: Item[];
 }
 
 const Accordion: React.FC<AccordionProps> = ({ data }) => {
