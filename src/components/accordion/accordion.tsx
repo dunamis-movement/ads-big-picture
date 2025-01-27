@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "./accordion.css";
 import { Item } from "@bigpicture/helpers/constants";
+import "./accordion.css";
 
 interface AccordionProps {
   data: Item[];

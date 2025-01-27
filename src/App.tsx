@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "./components/header";
-import BigPictureCards from "./components/big-picture-cards";
-import Accordion from "./components/accordion";
 import { accordionData, bigPictureData } from "./helpers/constants";
+import Header from "./components/header/header";
+import BigPictureCards from "./components/big-picture-cards/big-picture-cards";
+import Accordion from "./components/accordion/accordion";
 import "./App.css";
 
 const App: React.FC = () => {
