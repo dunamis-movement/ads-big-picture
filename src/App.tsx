@@ -4,11 +4,11 @@ import Header from "./components/header/header";
 import Cards from "./components/cards/cards";
 import Accordion from "./components/accordion/accordion";
 import Title from "./components/title/title";
-import "./app.css";
+import "./App.css";
 
 const App: React.FC = () => {
   return (
-    <div className="container">
+    <div className="container slide-down">
       <Header />
       <Title {...titles["Entendendo"]} />
       <Cards cards={cardItems} />
