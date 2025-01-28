@@ -2,11 +2,7 @@ import { useState } from "react";
 import { Item } from "@bigpicture/helpers/constants";
 import "./accordion.css";
 
-interface AccordionProps {
-  data: Item[];
-}
-
-const Accordion: React.FC<AccordionProps> = ({ data }) => {
+const Accordion: React.FC<{ items: Item[] }> = ({ items }) => {
   const [activeAccordion, setActiveAccordion] = useState<number | null>(null);
 
   const handleAccordionClick = (index: number) => {
@@ -14,19 +10,9 @@ const Accordion: React.FC<AccordionProps> = ({ data }) => {
   };
 
   return (
-    <div className="accordion-container">
-      <div className="big-picture-title orange-title">
-        <h1>
-          <span>Construindo minha</span>
-          <span> Big Picture</span>
-        </h1>
-        <p>
-          Através de direcionamentos espirituais no âmbito natural, tenho um
-          panorama estendido daquilo que já sou.
-        </p>
-      </div>
+    <section className="accordion-container">
       <div className="accordion">
-        {data.map((item, index) => (
+        {items.map((item, index) => (
           <div
             key={item.id}
             className={`accordion-item ${
@@ -45,13 +31,17 @@ const Accordion: React.FC<AccordionProps> = ({ data }) => {
                 {activeAccordion === index ? "-" : "+"}
               </span>
             </div>
-            {activeAccordion === index && (
+            <div
+              className={`accordion-content-wrapper ${
+                activeAccordion === index ? "open" : ""
+              }`}
+            >
               <div className="accordion-content">{item.content}</div>
-            )}
+            </div>
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

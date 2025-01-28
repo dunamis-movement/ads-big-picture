@@ -1,16 +1,19 @@
 import React from "react";
-import { accordionData, bigPictureData } from "./helpers/constants";
+import { accordionItems, cardItems, titles } from "./helpers/constants";
 import Header from "./components/header/header";
-import BigPictureCards from "./components/big-picture-cards/big-picture-cards";
+import Cards from "./components/cards/cards";
 import Accordion from "./components/accordion/accordion";
-import "./App.css";
+import Title from "./components/title/title";
+import "./app.css";
 
 const App: React.FC = () => {
   return (
     <div className="container">
       <Header />
-      <BigPictureCards data={bigPictureData} />
-      <Accordion data={accordionData} />
+      <Title {...titles["Entendendo"]} />
+      <Cards cards={cardItems} />
+      <Title {...titles["Construindo"]} />
+      <Accordion items={accordionItems} />
     </div>
   );
 };

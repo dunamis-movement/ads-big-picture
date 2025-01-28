@@ -2,7 +2,7 @@
   position: relative;
   height: auto;
   width: 100vw;
-  background: url("./assets/bg-header.png") no-repeat center center;
+  background: url("../../assets/bg-header.png") no-repeat center center;
   background-size: cover;
   display: flex;
   flex-direction: column;

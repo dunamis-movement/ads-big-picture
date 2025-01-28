@@ -4,7 +4,13 @@ export interface Item {
   content: string;
 }
 
-export const accordionData: Item[] = [
+export interface Titles {
+  color: "blue" | "orange";
+  title: string;
+  subtitle: string;
+}
+
+export const accordionItems: Item[] = [
   {
     id: "01",
     title: "VERSÍCULOS",
@@ -55,7 +61,7 @@ export const accordionData: Item[] = [
   },
 ];
 
-export const bigPictureData: Item[] = [
+export const cardItems: Item[] = [
   {
     title: "BIG PICTURE DE DEUS",
     content:
@@ -72,3 +78,18 @@ export const bigPictureData: Item[] = [
       "O Espírito Santo nos capacita para desenvolver o plano de Deus pai e Deus filho aqui na terra. Jesus nos convidou para fazer obras maiores através do Espírito Santo.",
   },
 ];
+
+export const titles: Record<string, Titles> = {
+  Entendendo: {
+    color: "blue",
+    title: "Entendendo a",
+    subtitle:
+      "Através de direcionamentos espirituais no âmbito natural, tenho um panorama estendido daquilo que já sou.",
+  },
+  Construindo: {
+    color: "orange",
+    title: "Construindo minha",
+    subtitle:
+      "Através de direcionamentos espirituais no âmbito natural, tenho um panorama estendido daquilo que já sou.",
+  },
+};

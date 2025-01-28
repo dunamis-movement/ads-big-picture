@@ -55,6 +55,22 @@
   color: var(--color-border);
 }
 
+.accordion-content-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.accordion-content-wrapper.open {
+  max-height: 300px;
+}
+
+.accordion-content {
+  padding: var(--padding-small);
+  font-size: var(--font-size-small);
+  color: var(--color-border);
+}
+
 @media (max-width: 820px) {
   .accordion {
     gap: var(--gap-small);
