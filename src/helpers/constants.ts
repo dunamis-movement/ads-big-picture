@@ -15,19 +15,19 @@ export const accordionItems: Item[] = [
     id: "01",
     title: "VERSÍCULOS",
     content:
-      "Versículos bíblicos que o Senhor já falou comigo e que marcaram meu relacionamento com ele. Os versículos que Deus já falou sobre você, são pilares para sustentar a sua jornada.",
+      "<strong>Versículos bíblicos que o Senhor já falou comigo e que marcaram meu relacionamento com ele.</strong> <br />Os versículos que Deus já falou sobre você, são pilares para sustentar a sua jornada.",
   },
   {
     id: "02",
     title: "DIREÇÕES SOBRENATURAIS",
     content:
-      "Explorar as maneiras pelas quais Deus comunica comigo. O que deus Já falou comigo em visões, palavras proféticas, sonhos, palavras de conhecimento. As experiências sobrenaturais são como os faróis que iluminam a nossa visão.Quais são as palavras e qual a frequência que isso aconteceu?",
+      "Explorar as maneiras pelas quais Deus comunica comigo. O que deus Já falou comigo em visões, palavras proféticas, sonhos, palavras de conhecimento.<br /><br /> As experiências sobrenaturais são como os faróis que iluminam a nossa visão.Quais são as palavras e qual a frequência que isso aconteceu?",
   },
   {
     id: "03",
     title: "ESFERAS DA SOCIEDADE",
     content:
-      "Onde Deus te chamou para atuar com aquilo que o Senhor tem dito no seu individual? A nossa missão é ser luz na escuridão, nas diferentes esferas da sociedade. Lembre-se: o Reino de Deus não é a igreja, a igreja está dentro do Reino de Deus nas 7 esferas.",
+      "Onde Deus te chamou para atuar com aquilo que o Senhor tem dito no seu individual?<br /> A nossa missão é ser luz na escuridão, nas diferentes esferas da sociedade. <br /><strong>Lembre-se: o Reino de Deus não é a igreja, a igreja está dentro do Reino de Deus nas 7 esferas.</strong>",
   },
   {
     id: "04",
@@ -45,13 +45,13 @@ export const accordionItems: Item[] = [
     id: "06",
     title: "CONEXÕES",
     content:
-      "Ninguém caminha sozinho, Deus coloca pessoas estratégicas na sua vida para seu desenvolvimento. Quais as conexões que desenvolvemos de forma sobrenaturais? Não podemos ignorar as conexões repentinas. Você pode estar a uma conexão do seu destino.",
+      "Ninguém caminha sozinho, Deus coloca pessoas estratégicas na sua vida para seu desenvolvimento.<br /><br /> Quais as conexões que desenvolvemos de forma sobrenaturais? Não podemos ignorar as conexões repentinas. Você pode estar a uma conexão do seu destino.",
   },
   {
     id: "07",
     title: "DONS: DE CRISTO E DO ESPÍRITO SANTO",
     content:
-      "Você não será eficaz se você tiver o chamado ministério mas não tiver o Dom, a ferramenta para execução desse chamado. Quais os dons de Cristo e do Espírito Santo que você carrega? \nDONS DE CRISTO \nDONS DO ESPÍRITO SANTO",
+      "Você não será eficaz se você tiver o chamado ministério mas não tiver o Dom, a ferramenta para execução desse chamado. Quais os dons de Cristo e do Espírito Santo que você carrega? <br /><br /><strong>DONS DE CRISTO <br />DONS DO ESPÍRITO SANTO</strong>",
   },
   {
     id: "08",

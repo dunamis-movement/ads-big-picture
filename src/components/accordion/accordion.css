@@ -29,8 +29,10 @@
 }
 
 .accordion-header h3 {
-  font-size: 14px;
-  margin: 0;
+  font-size: 30px;
+}
+.accordion-header h1 {
+  font-size: 60px;
 }
 
 .accordion-header .icon {
@@ -79,5 +81,12 @@
 
   .accordion-item {
     padding: var(--padding-small);
+  }
+
+  .accordion-header h3 {
+    font-size: 14px;
+  }
+  .accordion-header h1 {
+    font-size: 28px;
   }
 }

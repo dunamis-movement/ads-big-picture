@@ -36,7 +36,10 @@ const Accordion: React.FC<{ items: Item[] }> = ({ items }) => {
                 activeAccordion === index ? "open" : ""
               }`}
             >
-              <div className="accordion-content">{item.content}</div>
+              <div
+                className="accordion-content"
+                dangerouslySetInnerHTML={{ __html: item.content }}
+              />
             </div>
           </div>
         ))}
