@@ -84,7 +84,7 @@ export const titles: Record<string, Titles> = {
     color: "blue",
     title: "Entendendo a",
     subtitle:
-      "Através de direcionamentos espirituais no âmbito natural, tenho um panorama estendido daquilo que já sou.",
+      "Através da Big Picture de Deus Pai,  Jesus e o Espírito Santo, construo a minha big picture pessoal.",
   },
   Construindo: {
     color: "orange",
