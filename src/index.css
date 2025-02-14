@@ -4,8 +4,8 @@
   font-family: "Space Grotesk", serif;
   line-height: 1.5;
   font-weight: 400;
-  color: #213547; /* Cor do texto no modo claro */
-  background-color: #ffffff; /* Cor de fundo no modo claro */
+  color: #213547;  
+  background-color: #ffffff;  
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
