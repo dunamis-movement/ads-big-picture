@@ -1,5 +1,4 @@
 import { Item } from "@bigpicture/helpers/constants";
-import Title from "../title/title";
 import "./cards.css";
 
 const Cards: React.FC<{ cards: Item[] }> = ({ cards }) => {

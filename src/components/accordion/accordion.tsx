@@ -19,7 +19,7 @@ const Accordion: React.FC<{ items: Item[] }> = ({ items }) => {
               activeAccordion === index ? "active" : ""
             }`}
           >
-            <div
+            <button
               className="accordion-header"
               onClick={() => handleAccordionClick(index)}
             >
@@ -30,7 +30,7 @@ const Accordion: React.FC<{ items: Item[] }> = ({ items }) => {
               <span className="icon">
                 {activeAccordion === index ? "-" : "+"}
               </span>
-            </div>
+            </button>
             <div
               className={`accordion-content-wrapper ${
                 activeAccordion === index ? "open" : ""
