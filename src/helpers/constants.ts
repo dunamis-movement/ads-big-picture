@@ -15,7 +15,7 @@ export const accordionItems: Item[] = [
     id: "01",
     title: "VERSÍCULOS",
     content:
-      "<strong>Versículos bíblicos que o Senhor já falou comigo e que marcaram meu relacionamento com ele.</strong> <br />Os versículos que Deus já falou sobre você, são pilares para sustentar a sua jornada.",
+      "<strong>Josué 1:8</strong> - \"Não cesse de falar deste Livro da Lei; antes, medita nele dia e noite, para que tenhas cuidado de fazer segundo tudo quanto nele está escrito; então, farás prosperar o teu caminho e serás bem-sucedido.\"<br /><br /><strong>3 João 1:2</strong> - \"Amado, desejo que te vá bem em todas as coisas e que tenhas saúde, assim como bem vai a tua alma.\"<br /><br /><strong>Provérbios 16:3</strong> - \"Entrega ao Senhor as tuas obras, e os teus pensamentos serão estabelecidos.\"",
   },
   {
     id: "02",

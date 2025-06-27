@@ -27,6 +27,19 @@
   align-items: center;
   text-align: start;
   cursor: pointer;
+  background-color: #FF6B35;
+  border-radius: var(--radius-large);
+  padding: var(--padding-small);
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+  background-color: #e55a2b;
+}
+
+.accordion-item.active .accordion-header {
+  background-color: #d64e20;
 }
 
 .accordion-header h3 {
@@ -47,9 +60,10 @@
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
-  color: var(--color-background-dark);
+  color: white;
   cursor: pointer;
-  border: 2px solid var(--color-border);
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .accordion-content {
